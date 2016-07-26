@@ -1810,4 +1810,9 @@
   margin-left: 20%;
   background: salmon; }
 
+.satellite {
+  visibility: hidden;
+  border-radius: 100%;
+  margin-bottom: 75px; }
+
 /*# sourceMappingURL=fancy.css.map */

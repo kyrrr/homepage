@@ -59,6 +59,10 @@ body {
   color: white;
 }
 
+#home {
+  /**/
+}
+
 #center {
   width: 150px;
   height: 150px;
@@ -77,13 +81,11 @@ body {
   position: relative;
 }
 
-.satellite {
-  background-color: white;
-}
+
 
 #kyrrContainer {
-  width: 100px;
-  height: 100px;
+  width: 75px;
+  height: 75px;
   position: relative;
 }
  

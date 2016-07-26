@@ -1,6 +1,33 @@
-$(document).ready(function(){
+$( document ).ready(function(){
+	var satellites = $(".satellite").length;
+	console.log(satellites);
 
-	$(document).mouseup(function (e)
+	setInterval( function() { 
+		var random = Math.floor( ( Math.random() * 3 ) + 1)  - 1;
+		var colors = ["salmon", "indianred", "white"];
+		$(".satellite").css("background-color", colors[random]);
+
+	 }, 500 );
+
+	$( ".satellite" ).mouseover(function() {
+ 		$(".satellite").css("width", "500px");
+ 		$(".satellite").css("height", "500px");
+	});
+
+
+	setInterval(function(){
+		$(".satellite").show("slow");
+	}, 1300 );
+
+	setInterval(function(){
+		$(".satellite").hide("slow");
+	}, 700 );
+		
+	/*for ( var i = 0; i < satellites; i += 1 ) {
+			
+		}*/
+
+	/*$(document).mouseup(function (e)
 	{
 	    var container = $('.panel');
 
@@ -11,6 +38,8 @@ $(document).ready(function(){
 	        
 	    }
 
-	});
+	});*/
+
+
 
 });
