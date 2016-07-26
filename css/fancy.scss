@@ -1,0 +1,18 @@
+$total: 361;
+$step: 360deg / $total;
+
+#hue {
+	margin: 7%;
+}
+.ray {
+	margin-right: 10%;
+	height: 15px;
+}
+
+@for $i from 1 through $total {
+	.ray:nth-child(#{$i}) {
+		width: if($i % 2 == 0, 80%, 60%);
+		margin-left: if($i % 2 == 0, 10%, 20%);
+		background: adjust-hue(salmon, $i * $step);
+	}
+}
